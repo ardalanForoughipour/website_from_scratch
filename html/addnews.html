@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>adding news</h1>
+<form action="" method="post">
+    <div>
+        <label for="titleInput">
+            <span>title : </span>
+            <input type="text" name="title" id="titleInput">
+        </label>
+    </div>
+    <div>
+        <label for="articleInput">
+            <span>article : </span>
+            <textarea name="article" id="articleInput"></textarea>
+        </label>
+    </div>
+    <input type="hidden" value="%csrf_token%" name="csrf_token">
+    <input type="submit" value="post">
+</form>
+</body>
+</html>
